@@ -1,2 +1,2 @@
 SELECT  distinct channel 
-from POWERFLOW.public.appsflyer_raw
+from {{ source('powerflow', 'appsflyer_raw') }}
